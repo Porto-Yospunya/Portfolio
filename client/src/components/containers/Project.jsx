@@ -5,7 +5,7 @@ import projects from '../../../project.json';
 const Project = () => {
 
   const handleClickToVisit = (path) => {
-    window.alert(path);
+    window.open(path);
   }
 
   return (
