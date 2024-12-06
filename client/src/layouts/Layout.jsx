@@ -19,11 +19,11 @@ const Layout = () => {
         {/* Section 2 "About me" */}
         <About />
 
-        {/* Section 3 "My Projects" */}
-        <Project />
-
-        {/* Section 4 "Skill" */}
+        {/* Section 3 "Skill" */}
         <Skill />
+
+        {/* Section 4 "My Projects" */}
+        <Project />
       </main>
 
       <Footer />

@@ -24,8 +24,8 @@ const About = () => {
           className="flex flex-col justify-center items-start p-[40px]
           max-[1280px]:py-[20px]"
         >
-          <h1 className="text-[3rem] font-bold">About me</h1>
-          <p className="text-[1.2rem]">
+          <h1 className="text-[#1a2d42] text-[3rem] font-bold">About ME</h1>
+          <p className="text-[#2e4156] text-[1.2rem]">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, itaque quas sequi 
             vitae temporibus enim perferendis sint iste doloremque rerum ipsum magni! Animi nobis, 
             porro sed mollitia assumenda aut et!  

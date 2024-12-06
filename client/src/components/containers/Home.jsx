@@ -19,10 +19,10 @@ const Home = () => {
         max-[768px]:order-2"
       >
         <div className="flex flex-col">
-          <h1 className="text-[3rem] font-bold max-[480px]:text-[2.5rem]">Hi, I'm</h1>
-          <h1 className="text-[3rem] font-bold max-[480px]:text-[2.5rem]">Watcharapong Yospunya</h1>
-          <h1 className="text-[1.8rem] max-[480px]:text-[1rem]">Backend Developer</h1>
-          <h3 className="text-[1rem] max-[480px]:text-[.8rem]">I'm a Computer-engineering student at Naresuan University</h3>
+          <h1 className="text-[#1a2d42] text-[3rem] font-bold max-[480px]:text-[2.5rem]">Hi, I'm</h1>
+          <h1 className="text-[#1a2d42] text-[3rem] font-bold max-[480px]:text-[2.5rem]">Watcharapong Yospunya</h1>
+          <h1 className="text-[#2e4156] text-[1.8rem] max-[480px]:text-[1rem]">Fullstack Developer</h1>
+          <h3 className="text-[#2e4156] text-[1rem] max-[480px]:text-[.8rem]">I'm a Computer-engineering student at Naresuan University</h3>
           <div className="my-[10px]">
             <button 
               className="px-[20px] py-[8px] bg-[#1a2d42] text-[#ffffff] rounded-[16px]"
