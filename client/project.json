@@ -3,6 +3,12 @@
     "image": "/assets/cup_coffee.jpg",
     "title": "Cup Coffee",
     "description": "Soft Skill 4",
-    "link": "https://drive.google.com/file/d/1pZ0LaKhM05V0v9X-C47DTR4-Lcf-0hLV/view?fbclid=IwY2xjawG_sklleHRuA2FlbQIxMAABHSCE0nJW4Rurx3e0WzWWcpmheLqMlfweVFCgxjJ0q52xfiI4eDvDtSGzHA_aem_zLTStV3SkBP5Qg9yes5xug"
+    "link": "https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1qBsruwW0YE7EB2EvxK60vyM9GpDk_GUt%2Fview%3Fusp%3Ddrivesdk%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3rY16g7kBQrpC8phFZDD75T-ePax8sLy19GcFSMp5q8Y3Bmn0Os6ph1Ao_aem_Js5XfIcYKCeWW9l49Ctz7Q&h=AT0HH434mbklmMm4QiJCVOkCbYUvZ6ly9nwWKMdYqXwITderwq8jQHWtdxzh69knwY7ObiWyimK3mMbAkna6UUqP0Yu64tXC9cEK2sFchqwQ0nM727-DzlX65wswQnPPRU_3PFfPFjrveigJV4q5pA"
+  },
+  {
+    "image": "/assets/cafe.png",
+    "title": "Dev Coffee",
+    "description": "First project to use React JS",
+    "link": "https://cafe-amber.vercel.app/"
   }
 ]

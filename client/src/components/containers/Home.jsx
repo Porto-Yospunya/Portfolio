@@ -1,16 +1,16 @@
 import React from 'react';
 
 const Home = () => {
-
   const handleDownload = (e) => {
     e.preventDefault();
-    window.alert("Nothing ;)");
+    window.alert("Nothing, I hope you won't click it again.");
   }
 
   return (
     <div 
       className="grid grid-cols-2 h-[100vh]
       max-[1280px]:mx-[100px]
+      max-[1024px]:mx-[40px]
       max-[768px]:grid-cols-1" 
       id="home"
     >
@@ -38,7 +38,7 @@ const Home = () => {
         max-[768px]:order-1"
       >
         <img
-          src="/assets/image-1-1.png"
+          src="/assets/me-1-1.jpg"
           alt="No Image"
           className="shadow-[#1a2d42] shadow-2xl w-[400px] min-w-[400px] rounded-[20px]
           max-[480px]:min-w-[280px]"

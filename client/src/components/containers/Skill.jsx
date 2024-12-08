@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { ChevronDown, ChevronUp } from 'react-ionicons';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa6';
 
 const Skill = () => {
 
@@ -19,17 +19,7 @@ const Skill = () => {
     { icon: "devicon-python-plain", name: "Python" },
     { icon: "devicon-java-plain", name: "Java" },
   ];
-
-  const handleClickActive = (e) => {
-    e.preventDefault();
-    console.log(active)
-    if (active) {
-      setActive(false);
-    } else {
-      setActive(true);
-    }
-  }
-
+  
   return (
     <div 
       id="skill"
@@ -40,9 +30,9 @@ const Skill = () => {
         <h1 className="text-[#1a2d42] text-[3rem] font-bold">Skills</h1>
       </div>
       <div 
-        className={`grid grid-cols-5 w-[100%] h-[1200px] transition-all overflow-hidden
+        className={`grid grid-cols-5 w-[100%] h-[800px] transition-all overflow-hidden
         max-[768px]:grid-cols-3
-        max-[480px]:grid-cols-2 ${active && "max-[480px]:h-[550px]"}`}
+        max-[480px]:grid-cols-2 ${!active && "max-[480px]:h-[1200px]"} ${active && "max-[480px]:h-[550px]"}`}
       >
         {icons.map((icon, index) => (
           <div className="flex flex-col justify-center items-center my-[40px]" key={index}>
@@ -55,14 +45,14 @@ const Skill = () => {
         ))}
       </div>
       <button
-        onClick={handleClickActive}
+        onClick={() => active ? setActive(false) : setActive(true)}
         className="flex justify-center items-center w-[100px]
         min-[480px]:opacity-0"
       >
         {active ? (
-          <ChevronDown />
+          <FaChevronDown />
         ) : (
-          <ChevronUp />
+          <FaChevronUp />
         )}
       </button>
     </div>

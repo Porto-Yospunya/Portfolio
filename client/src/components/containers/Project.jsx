@@ -1,13 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import projects from '../../../project.json';
 
 const Project = () => {
-
-  const handleClickToVisit = (path) => {
-    window.open(path);
-  }
-
   return (
     <div className="bg-[#e3e5e5] py-[40px]" id="project">
       <div className="flex justify-center">
@@ -18,7 +14,11 @@ const Project = () => {
         max-[768px]:grid-cols-1"
       >
         {projects.map((project, index) => (
-          <div className="flex flex-row justify-center" key={index}>
+          <div 
+          key={index}
+          className="flex flex-row justify-center
+          max-[768px]:justify-start" 
+          >
             <img 
               src={project.image} 
               alt="No Image" 
@@ -29,13 +29,13 @@ const Project = () => {
               <h1 className="text-[#1a2d42] text-[2rem] font-bold max-[480px]:text-[1rem]">{project.title}</h1>
               <p className="text-[#2e4156] max-[480px]:text-[.8rem]">{project.description}</p>
               <div className="my-[5px]">
-                <button 
-                  onClick={() => handleClickToVisit(project.link)} 
+                <Link 
+                  to={project.link}
                   className="py-[6px] px-[30px] bg-[#1a2d42] text-[1.2rem] text-[#ffffff] rounded-[10px]
                   max-[480px]:px-[20px]"
                 >
                   visit
-                </button>
+                </Link>
               </div>
             </div>
           </div>
