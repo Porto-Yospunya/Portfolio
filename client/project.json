@@ -8,7 +8,7 @@
   {
     "image": "/assets/cafe.png",
     "title": "Dev Coffee",
-    "description": "First project to use React JS",
+    "description": "First project to use ReactJS",
     "link": "https://cafe-amber.vercel.app/"
   }
 ]

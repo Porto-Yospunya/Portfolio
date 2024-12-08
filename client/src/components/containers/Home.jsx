@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoDownloadOutline } from 'react-icons/io5';
 
 const Home = () => {
   const handleDownload = (e) => {
@@ -25,10 +26,10 @@ const Home = () => {
           <h3 className="text-[#2e4156] text-[1rem] max-[480px]:text-[.8rem]">I'm a Computer-engineering student at Naresuan University</h3>
           <div className="my-[10px]">
             <button 
-              className="px-[20px] py-[8px] bg-[#1a2d42] text-[#ffffff] rounded-[16px]"
+              className="flex items-center gap-[10px] px-[20px] py-[8px] bg-[#1a2d42] text-[#ffffff] rounded-[16px]"
               onClick={handleDownload}
             >
-              Download CV
+              Download CV <IoDownloadOutline className="text-[1.4rem]" />
             </button>
           </div>
         </div>
