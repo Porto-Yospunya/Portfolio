@@ -1,4 +1,5 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa6';
 
 const Skill = () => {
@@ -19,31 +20,37 @@ const Skill = () => {
     { icon: "devicon-python-plain", name: "Python" },
     { icon: "devicon-java-plain", name: "Java" },
   ];
-  
+
   return (
-    <div 
+    <div
       id="skill"
       className="my-[20px] mx-[60px] flex flex-col items-center
-      max-[480px]:mx-[20px]" 
+      max-[480px]:mx-[20px]"
     >
       <div className="flex justify-center">
         <h1 className="text-[#1a2d42] text-[3rem] font-bold">Skills</h1>
       </div>
-      <div 
+      <motion.div
         className={`grid grid-cols-5 w-[100%] h-[800px] transition-all overflow-hidden
         max-[768px]:grid-cols-3
         max-[480px]:grid-cols-2 ${!active && "max-[480px]:h-[1200px]"} ${active && "max-[480px]:h-[550px]"}`}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ margin: '-300px' }}
       >
         {icons.map((icon, index) => (
-          <div className="flex flex-col justify-center items-center my-[40px]" key={index}>
-            <i 
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center my-[40px]"
+          >
+            <i
               class={`${icon.icon} text-[6rem] font-[500] text-[#1a2d42]
               max-[480px]:text-[4.5rem]`}
             ></i>
             <h1 className="text-[1.8rem] text-[#1a2d42] font-bold my-[5px] max-[480px]:text-[1.2rem]">{icon.name}</h1>
           </div>
         ))}
-      </div>
+      </motion.div>
       <button
         onClick={() => active ? setActive(false) : setActive(true)}
         className="flex justify-center items-center w-[100px]

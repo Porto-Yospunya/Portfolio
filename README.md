@@ -12,7 +12,7 @@ Introduce myself and show my project.
  $ npm install -D tailwindcss postcss autoprefixer
  ```
  ```
- $ npm install react-router-dom react-icons devicon axios
+ $ npm install react-router-dom axios framer-motion react-icons devicon
  ```
 
 ### Tailwind setup

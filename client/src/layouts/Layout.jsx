@@ -8,11 +8,16 @@ import Project from '../components/containers/Project';
 import Skill from '../components/containers/Skill';
 
 const Layout = () => {
+
+  const handleDrag = (e) => {
+
+  } 
+
   return (
     <>
       <Sidebar />
 
-      <main>
+      <main onDrag={''} onDrop={''}>
         {/* Section 1 "Home" */}
         <Home />
 

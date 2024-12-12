@@ -1,19 +1,28 @@
+// import ...
 import React from 'react';
+import { motion } from 'framer-motion';
+
+// import icons ...
 import { IoDownloadOutline } from 'react-icons/io5';
 
 const Home = () => {
+
+  // download function
   const handleDownload = (e) => {
     e.preventDefault();
     window.alert("Nothing, I hope you won't click it again.");
   }
 
   return (
-    <div 
+    <motion.div 
       className="grid grid-cols-2 h-[100vh]
       max-[1280px]:mx-[100px]
       max-[1024px]:mx-[40px]
       max-[768px]:grid-cols-1" 
       id="home"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ margin: '-300px' }}
     >
       <div 
         className="flex flex-col justify-center items-center
@@ -45,8 +54,8 @@ const Home = () => {
           max-[480px]:min-w-[280px]"
         />
       </div>
-    </div>
-  )
+    </motion.div>
+  );
 }
 
 export default Home;
